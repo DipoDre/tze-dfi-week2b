@@ -1,0 +1,265 @@
+/*  Universal selector */
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
+/* Tag selector */
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+section header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+section header ul li a {
+    text-decoration: none;
+    color: #3C3C3C;
+    font-size: 13px;
+}
+
+section header ul li a:hover {
+    text-decoration: underline;
+}
+
+.circle-shadow {
+    width: 50px;
+    height: 50px;
+    border: 1px transparent solid;
+    border-radius: 50%;
+}
+
+.circle-shadow:hover {
+    box-shadow: 0 0 0 10px #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+section header ul li button {
+    background-color: #4584EF;
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+section header ul li button:hover {
+    box-shadow: 0 1px 1px 0 #a2c5f3, 0 1px 5px 0 #a2c5f3;
+}
+
+/* class selector */
+.main {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.searchBox .search {
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 0 5px;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.buttons button:hover {
+    border: 1px solid #ccc;
+}
+
+.languages {
+    display: flex;
+    margin-top:30px;
+}
+
+.languages li {
+    list-style: none;
+    margin:  0 5px;
+    font-size: 13px;
+}
+
+.languages li a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.languages li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.footer .row {
+    padding: 15px 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer .row.row1 {
+    color: #6f6f6f;
+    display: flex;
+}
+
+.footer .row.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row.row2 ul {
+    display: flex;
+}
+
+.footer .row.row2 ul li {
+    list-style: none;
+}
+
+.footer .row.row2 ul li a {
+    text-decoration:  none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+
+.footer .row.row2 ul:nth-child(2) {
+    text-decoration:  none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 0;
+}
+
+
+@media (max-width: 768px) {
+    .footer .row.row2 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer .row.row1 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer .row.row2 ul, .footer .row.row2 ul:nth-child(2) {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .languages li {
+        font-size: 11px;
+        margin:  0 3px;
+    }
+
+    .footer .row.row2 ul li a {
+        text-align: center;
+    }
+
+    .footer .row.row2 ul li:nth-child(4) {
+        display: none;
+    }
+
+    .footer .row.row2 ul li:nth-child(4) a {
+        color: #5f6368;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 370px) {
+    .buttons button {
+        font-size: 12px;
+    }
+
+    .footer .row {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .footer .row.row2 ul li a {
+        margin-right: 15px;
+    }
+
+}
+
+
+
+
+
